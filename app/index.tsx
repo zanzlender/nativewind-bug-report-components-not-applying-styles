@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Stack.Screen options={{ title: 'Home' }} />
       <Container>
-        <View className="flex flex-1 flex-col items-center gap-2 px-4 py-12">
+        <View className="flex flex-1 flex-col items-center gap-10 px-4 py-12">
           <Text className="text-blue-600">Basic text - should be blue - set in classname</Text>
 
           <ThemedText className="text-red-500">
@@ -19,6 +19,14 @@ export default function Home() {
           <ThemedText>
             Custom component - default variant - should be green - set in component variant
             definitions
+          </ThemedText>
+
+          <ThemedText variant="default">
+            Custom component with explicitly defined variant - should be green - set in component
+          </ThemedText>
+
+          <ThemedText variant="yellow">
+            Custom component with non-default variant - should be yellow - set in component
           </ThemedText>
         </View>
       </Container>

@@ -12,6 +12,7 @@ const themedTextVariants = cva('text-lg text-green-500', {
   variants: {
     variant: {
       default: 'text-5xl',
+      yellow: 'text-yellow-500',
     },
   },
   defaultVariants: {
