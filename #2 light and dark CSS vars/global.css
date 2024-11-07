@@ -21,3 +21,21 @@
     --radius: 0.5rem;
   }
 }
+
+.sdsadasd {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(222.2 84% 4.9%);
+  --primary: hsl(222.2 47.4% 11.2%);
+  --primary-foreground: hsl(210 40% 98%);
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(210 40% 98%);
+
+  --background__dark: hsl(222.2 84% 4.9%);
+  --foreground__dark: hsl(210 40% 98%);
+  --primary__dark: hsl(210 40% 98%);
+  --primary-foreground__dark: hsl(222.2 47.4% 11.2%);
+  --destructive__dark: hsl(0 62.8% 30.6%);
+  --destructive-foreground__dark: hsl(210 40% 98%);
+
+  --radius: hsl(0.5rem);
+}

@@ -14,20 +14,20 @@ module.exports = {
     extend: {
       colors: {
         background: 'hsl(var(--background))',
-        "background-dark": 'hsl(var(--background__dark))',
+        'background-dark': 'hsl(var(--background__dark))',
         foreground: 'hsl(var(--foreground))',
-        "foreground-dark": 'hsl(var(--foreground__dark))',
+        'foreground-dark': 'hsl(var(--foreground__dark))',
         primary: {
           DEFAULT: 'hsl(var(--primary))',
-          dark: "hsl(var(--primary_dark))",
+          dark: 'hsl(var(--primary__dark))',
           foreground: 'hsl(var(--primary-foreground))',
-          "foreground-dark": 'hsl(var(--primary-foreground__dark))',
+          'foreground-dark': 'hsl(var(--primary-foreground__dark))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
-          dark: "hsl(var(--destructive__dark))",
+          dark: 'hsl(var(--destructive__dark))',
           foreground: 'hsl(var(--destructive-foreground))',
-          "foreground-dark": 'hsl(var(--destructive-foreground__dark))',
+          'foreground-dark': 'hsl(var(--destructive-foreground__dark))',
         },
       },
       borderRadius: {
