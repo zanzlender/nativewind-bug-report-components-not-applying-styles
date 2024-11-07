@@ -1,17 +1,12 @@
 import { Text, type TextProps } from 'react-native';
-import { type ClassValue, clsx } from 'clsx';
-import { twMerge } from 'tailwind-merge';
-
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
 
 import { cva, type VariantProps } from 'class-variance-authority';
+import { cn } from '~/lib/utils';
 
-const themedTextVariants = cva('text-lg text-green-500', {
+const themedTextVariants = cva('text-lg transition-all duration-200', {
   variants: {
     variant: {
-      default: 'text-5xl',
+      default: 'text-foreground',
       yellow: 'text-yellow-500',
     },
   },
@@ -23,6 +18,5 @@ const themedTextVariants = cva('text-lg text-green-500', {
 export type ThemedTextProps = TextProps & VariantProps<typeof themedTextVariants>;
 
 export function ThemedText({ className, variant, ...rest }: ThemedTextProps) {
-  console.log(cn(themedTextVariants({ variant }), className));
-  return <Text className={cn(themedTextVariants({ variant }), className)} {...rest} />;
+  return <Text className={cn(themedTextVariants({ variant, className }))} {...rest} />;
 }
